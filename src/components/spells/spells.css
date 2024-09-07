@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Libre";
+  src: url("/fonts/mLibreBaskerville-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "JainiPurva";
+  src: url("/fonts/JainiPurva-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Satisfy";
+  src: url("/fonts/Satisfy-Regular.ttf") format("truetype");
+}
+
+.spell-sec {
+  background-color: #071013;
+  height: 100vh;
+  background-image: url("/images/Spell-bg2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.title-spell {
+  position: relative;
+  top: 150px;
+}
+
+.spell-sec h2 {
+  font-family: "JainiPurva";
+  color: rgb(23, 27, 28);
+  font-weight: bolder;
+}
+
+.input-search {
+  background-color: transparent;
+  border: 2px solid rgb(23, 27, 28);
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.input-search::placeholder {
+  color: #313131;
+}
+
+.search-b {
+  background-color: rgb(23, 27, 28);
+  border: 2px solid rgb(23, 27, 28);
+  border-radius: 5px;
+  color: rgb(182, 182, 182);
+  font-family: "Libre";
+}
+
+.spell-i {
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  max-width: 400px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.def-m {
+  position: relative;
+  top: 150px;
+  font-size: 50px;
+  font-family: "JainiPurva";
+}
+
+.spell-i {
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  max-width: 750px;
+  max-height: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 5px red;
+}
+
+.spell-i strong {
+  display: block;
+  font-weight: bold;
+}
+
+.desc-b {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 150px;
+}
+
+.name-s {
+  font-family: "JainiPurva";
+  font-size: 45px;
+}
+
+.desc-s {
+  font-family: "Satisfy";
+  font-size: 25px;
+}
+
+@media (min-width: 400px) and (max-width: 1400px) {
+  .title-spell {
+    position: relative;
+    top: 120px;
+  }
+
+  .desc-b {
+    top: 135px;
+  }
+
+  .name-s {
+    font-size: 30px;
+  }
+
+  .desc-s {
+    font-size: 20px;
+  }
+
+  .def-m {
+    font-size: 50px;
+    top: 80px;
+  }
+}
